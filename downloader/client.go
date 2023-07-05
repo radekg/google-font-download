@@ -1,7 +1,6 @@
 package downloader
 
 import (
-	"fmt"
 	"io"
 	"net/http"
 	"net/url"
@@ -79,7 +78,6 @@ readerloop:
 					}
 					if fontFileURL.Scheme == "http" || fontFileURL.Scheme == "https" {
 
-						fmt.Println(" ===========> ", fontFileURLString)
 						fontDataResponse, err := http.Get(fontFileURLString)
 						if err != nil {
 							for _, x := range result {
