@@ -1,4 +1,4 @@
-# Download Google Fonts file
+# Download Google Font files
 
 Download all Google Font files for a given font URL.
 
