@@ -170,7 +170,7 @@ loop:
 						switch propToken {
 						case css.ErrorToken:
 							dr.chanError <- &ErrUnexpectedError{
-								ReceivedToken:  found,
+								ReceivedToken:  propToken,
 								CurrentContext: currentFont,
 							}
 							break loop
